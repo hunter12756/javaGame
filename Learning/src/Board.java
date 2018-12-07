@@ -10,6 +10,7 @@ import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+
 public class Board extends JPanel implements ActionListener {
 
     private final int ICRAFT_X = 40;
@@ -18,6 +19,7 @@ public class Board extends JPanel implements ActionListener {
     private Timer timer;
     private SpaceShip spaceShip;
     private EnemyDriver enemy;
+
     public Board() {
         this.setFocusable(true);
         initBoard();
@@ -27,7 +29,9 @@ public class Board extends JPanel implements ActionListener {
 
         addKeyListener(new TAdapter());
         setBackground(Color.BLACK);
-        //user character, moveable
+
+
+        //user character, move able
         spaceShip = new SpaceShip(ICRAFT_X, ICRAFT_Y);
         // ai enemy
         enemy= new EnemyDriver(ICRAFT_X, ICRAFT_Y);
@@ -48,6 +52,7 @@ public class Board extends JPanel implements ActionListener {
     private void doDrawing(Graphics g) {
 
         Graphics2D g2d = (Graphics2D) g;
+
 
         g2d.drawImage(spaceShip.getImage(), spaceShip.getX(), spaceShip.getY(), this);
         List<Missile> missiles = spaceShip.getMissiles();

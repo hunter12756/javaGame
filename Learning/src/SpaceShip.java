@@ -18,7 +18,7 @@ public class SpaceShip extends Sprite {
 
         missiles = new ArrayList<>();
         enemies = new ArrayList<>();
-        loadImage("src/player.png");
+        loadImage("src/assets/player.png");
         getImageDimensions();
     }
 

@@ -8,7 +8,7 @@ public class EnemyDriver extends Enemy {
     }
 
     private void initEnemyDriver() {
-        loadImage("src/enemyship.png");
+        loadImage("src/assets/enemyship.png");
         getImageDimensions();
     }
 
