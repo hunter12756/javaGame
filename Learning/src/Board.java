@@ -106,7 +106,7 @@ public class Board extends JPanel implements ActionListener {
                 monster.move();
             }
             else {
-                //spawn.remove(i);
+                spawn.remove(i);
             }
 
             }

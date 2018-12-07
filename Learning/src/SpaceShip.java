@@ -63,6 +63,8 @@ public class SpaceShip extends Sprite {
 
     public void fire() {
         missiles.add(new Missile(x + width, y + height / 2));
+        //adds sound effect
+        new LaserSound();
     }
     public void generate() {
         enemies.add(new EnemyDriver(x+ width, y +height/2));
